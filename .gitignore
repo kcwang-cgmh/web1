@@ -1,5 +1,6 @@
 # Visual Studio and user-specific files
 .vs/
+.vscode/
 *.user
 *.suo
 
@@ -12,4 +13,3 @@ obj/
 
 # OS-generated files
 .DS_Store
-
