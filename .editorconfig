@@ -1,0 +1,5 @@
+root = true
+
+[*.cs]
+# 移除未使用的 using 指示詞
+dotnet_diagnostic.IDE0005.severity = warning
