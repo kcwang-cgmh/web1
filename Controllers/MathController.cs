@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using web1.Models;
 
 namespace web1.Controllers
 {
@@ -10,15 +11,10 @@ namespace web1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(int No1, int No2)
+        public IActionResult Add(AddModel obj)
         {
-            ViewBag.Answer = No1 + No2;
-            ViewBag.No1 = No1;
-            ViewBag.No2 = No2;
-
-            // 也可以用 ViewData["Answer"] = No1 + No2;
-            // cshtml 中用 @ViewData["Answer"] 取值
-            return View();
+            obj.Answer = obj.No1 + obj.No2;
+            return View(obj);
         }
     }
 }
