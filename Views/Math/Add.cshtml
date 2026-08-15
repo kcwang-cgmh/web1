@@ -2,9 +2,9 @@
 
 <form method="post" action="/Math/Add">
   <span>No1:</span>
-  <input type="text" name="No1" value="@ViewBag.No1" /><br />
+  <input type="text" name="No1" value="@ViewData["No1"]" /><br />
   <span>No2:</span>
-  <input type="text" name="No2" value="@ViewBag.No2" /><br />
+  <input type="text" name="No2" value="@ViewData["No2"]" /><br />
   <input type="submit" value="Calculate" /><br />
-  <span>Result:</span>@ViewBag.Answer
+  <span>Result:</span>@ViewData["Answer"]
 </form>

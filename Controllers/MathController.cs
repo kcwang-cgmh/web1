@@ -12,12 +12,10 @@ namespace web1.Controllers
         [HttpPost]
         public IActionResult Add(int No1, int No2)
         {
-            ViewBag.Answer = No1 + No2;
-            ViewBag.No1 = No1;
-            ViewBag.No2 = No2;
+            ViewData["Answer"] = No1 + No2;
+            ViewData["No1"] = No1;
+            ViewData["No2"] = No2;
 
-            // 也可以用 ViewData["Answer"] = No1 + No2;
-            // cshtml 中用 @ViewData["Answer"] 取值
             return View();
         }
     }
